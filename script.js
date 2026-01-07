@@ -1,4 +1,22 @@
-document.querySelector(".contact-form")?.addEventListener("submit", e => {
+(function () {
+  emailjs.init("8mU7P_X9ophUnY3uW");
+})();
+
+document.getElementById("contact-form")?.addEventListener("submit", function (e) {
   e.preventDefault();
-  alert("Message sent! (Demo)");
+
+  emailjs.sendForm(
+    "service_oubno0f",
+    "template_uq2wfou",
+    this
+  ).then(
+    () => {
+      alert("Message sent successfully!");
+      this.reset();
+    },
+    (error) => {
+      alert("Something went wrong. Please try again.");
+      console.error(error);
+    }
+  );
 });
