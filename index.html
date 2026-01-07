@@ -65,6 +65,8 @@
       border-radius: 30px;
       font-weight: 500;
       display: inline-block;
+      border: none;
+      cursor: pointer;
     }
 
     .cta:hover {
@@ -104,11 +106,65 @@
       margin-bottom: 0;
     }
 
+    /* ===== CONTACT ===== */
+    .contact {
+      padding: 100px 60px;
+      background-color: #0b0d12;
+    }
+
+    .contact h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      max-width: 500px;
+      margin-bottom: 50px;
+    }
+
+    .contact-form {
+      max-width: 500px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      border: none;
+      background: #151926;
+      color: white;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #9aa3ff;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      padding: 40px 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9aa3ff;
+      background-color: #0f121a;
+    }
+
     /* ===== MOBILE ===== */
     @media (max-width: 900px) {
       header,
       .hero,
-      .services {
+      .services,
+      .contact,
+      footer {
         padding: 40px 25px;
       }
 
@@ -128,7 +184,7 @@
   <!-- HEADER -->
   <header>
     <div class="logo">ASTRA</div>
-    <a href="#" class="cta">Contact</a>
+    <a href="#contact" class="cta">Contact</a>
   </header>
 
   <!-- HERO -->
@@ -139,7 +195,7 @@
         Astra Consulting partners with forward-thinking companies to design,
         scale, and modernize their digital presence.
       </p>
-      <a href="#" class="cta">Start a Project</a>
+      <a href="#contact" class="cta">Start a Project</a>
     </div>
   </section>
 
@@ -173,6 +229,27 @@
       </div>
     </div>
   </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Tell us about your project and we’ll get back to you with
+      clear next steps.
+    </p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Tell us about your project"></textarea>
+      <button class="cta" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Astra Consulting. All rights reserved.
+  </footer>
 
 </body>
 </html>
