@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="dark">
 
 <div class="bg-glow"></div>
 
 <header class="fade-in">
   <div class="logo">ASTRA</div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
     <a href="#contact" class="cta small">Contact</a>
+    <button id="themeToggle" class="theme-toggle">☀︎</button>
   </nav>
 </header>
 
@@ -25,88 +26,75 @@
     <span class="eyebrow">Digital Consulting Studio</span>
     <h1>Build digital systems that feel effortless.</h1>
     <p>
-      We help ambitious businesses design, launch, and scale
-      premium digital experiences that convert and endure.
+      We design and engineer premium digital products that scale,
+      convert, and endure.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="cta">Start a Project</a>
-      <a href="#services" class="ghost">Explore Services</a>
+      <a href="#work" class="ghost">View Work</a>
     </div>
   </div>
 </section>
 
 <section class="stats fade-up">
-  <div>
-    <h3>10+</h3>
-    <p>Years Experience</p>
-  </div>
-  <div>
-    <h3>120+</h3>
-    <p>Projects Delivered</p>
-  </div>
-  <div>
-    <h3>98%</h3>
-    <p>Client Satisfaction</p>
-  </div>
+  <div><h3>120+</h3><p>Projects</p></div>
+  <div><h3>98%</h3><p>Satisfaction</p></div>
+  <div><h3>10+</h3><p>Years</p></div>
 </section>
 
 <section class="services fade-up" id="services">
   <h2>What We Do</h2>
-
   <div class="service-grid">
     <div class="service-card">
       <span>01</span>
       <h3>Strategy</h3>
-      <p>
-        We define positioning, messaging, and technical direction
-        so every decision compounds.
-      </p>
+      <p>Clarity, positioning, and technical direction.</p>
     </div>
-
     <div class="service-card">
       <span>02</span>
       <h3>Design</h3>
-      <p>
-        Interfaces engineered to feel intuitive, premium,
-        and conversion-focused.
-      </p>
+      <p>Interfaces that feel intuitive and premium.</p>
     </div>
-
     <div class="service-card">
       <span>03</span>
       <h3>Technology</h3>
-      <p>
-        Fast, scalable systems built for performance,
-        security, and future growth.
-      </p>
+      <p>Fast, scalable systems built to last.</p>
     </div>
   </div>
 </section>
 
-<section class="why fade-up">
-  <h2>Why Astra</h2>
-  <div class="why-grid">
-    <p>✔ Clear thinking over noise</p>
-    <p>✔ Systems, not hacks</p>
-    <p>✔ Long-term scalability</p>
-    <p>✔ Founder-level attention</p>
+<section class="work fade-up" id="work">
+  <h2>Selected Work</h2>
+  <div class="work-grid">
+    <div class="work-card">
+      <h4>Fintech Platform</h4>
+      <p>Product strategy, UI, and scalable frontend.</p>
+    </div>
+    <div class="work-card">
+      <h4>Luxury Brand</h4>
+      <p>High-conversion website & design system.</p>
+    </div>
+    <div class="work-card">
+      <h4>SaaS Startup</h4>
+      <p>MVP build and growth architecture.</p>
+    </div>
   </div>
 </section>
 
 <section class="contact fade-up" id="contact">
   <h2>Let’s build something exceptional</h2>
-  <p>Tell us about your project and we’ll respond within 24 hours.</p>
+  <p id="aiHint">Tell us about your project.</p>
 
   <form class="contact-form" id="contact-form">
     <input type="text" name="name" placeholder="Your Name" required />
     <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Tell us about your project"></textarea>
+    <textarea name="message" id="message" placeholder="Project details"></textarea>
     <button type="submit" class="cta">Send Message</button>
   </form>
 </section>
 
 <footer>
-  © 2026 Astra Consulting. Built for clarity.
+  © 2026 Astra Consulting
 </footer>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
