@@ -52,12 +52,12 @@
 
 <section class="contact fade-up" id="contact">
   <h2>Contact Us</h2>
-  <p>Tell us about your project and we’ll respond within 24 hours.</p>
+  <p>Tell us about your project and we’ll get back to you.</p>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea placeholder="Tell us about your project"></textarea>
+  <form class="contact-form" id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Tell us about your project"></textarea>
     <button type="submit" class="cta">Send Message</button>
   </form>
 </section>
@@ -66,6 +66,7 @@
   © 2026 Astra Consulting. All rights reserved.
 </footer>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
