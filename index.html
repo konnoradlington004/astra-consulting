@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    /* ===== GLOBAL ===== */
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -13,6 +14,12 @@
       color: #ffffff;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== HEADER ===== */
     header {
       padding: 40px 60px;
       display: flex;
@@ -26,6 +33,7 @@
       letter-spacing: 1px;
     }
 
+    /* ===== HERO ===== */
     .hero {
       min-height: 80vh;
       display: flex;
@@ -47,6 +55,7 @@
       font-size: 1.1rem;
       color: #cfd3ff;
       margin-bottom: 40px;
+      line-height: 1.6;
     }
 
     .cta {
@@ -54,7 +63,6 @@
       color: white;
       padding: 14px 32px;
       border-radius: 30px;
-      text-decoration: none;
       font-weight: 500;
       display: inline-block;
     }
@@ -62,16 +70,68 @@
     .cta:hover {
       opacity: 0.9;
     }
+
+    /* ===== SERVICES ===== */
+    .services {
+      padding: 100px 60px;
+      background-color: #0f121a;
+    }
+
+    .services h2 {
+      font-size: 2.2rem;
+      margin-bottom: 60px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #151926;
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .service-card p {
+      color: #bfc6ff;
+      margin-bottom: 0;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 900px) {
+      header,
+      .hero,
+      .services {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header>
     <div class="logo">ASTRA</div>
     <a href="#" class="cta">Contact</a>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>We build digital clarity for ambitious businesses.</h1>
@@ -80,6 +140,37 @@
         scale, and modernize their digital presence.
       </p>
       <a href="#" class="cta">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Strategy</h3>
+        <p>
+          We help businesses define clear digital direction through research,
+          positioning, and long-term planning.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Design</h3>
+        <p>
+          Clean, modern interfaces built to communicate trust, clarity,
+          and premium quality.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h3>Technology</h3>
+        <p>
+          Scalable websites and systems built with performance,
+          security, and future growth in mind.
+        </p>
+      </div>
     </div>
   </section>
 
