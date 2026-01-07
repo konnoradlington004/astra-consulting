@@ -14,9 +14,8 @@ document.getElementById("contact-form")?.addEventListener("submit", function (e)
       alert("Message sent successfully!");
       this.reset();
     },
-    (error) => {
+    () => {
       alert("Something went wrong. Please try again.");
-      console.error(error);
     }
   );
 });
