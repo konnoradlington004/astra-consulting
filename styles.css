@@ -1,0 +1,158 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #0b0d12;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+header {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #cfd3ff;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* ===== BUTTON ===== */
+.cta {
+  background: linear-gradient(135deg, #6f7bff, #4b5bff);
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 500;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  padding: 100px 60px;
+  background: #0f121a;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #151926;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  padding: 100px 60px;
+}
+
+.contact-form {
+  max-width: 500px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #151926;
+  border: none;
+  border-radius: 12px;
+  color: white;
+}
+
+/* ===== PAGE ===== */
+.page {
+  padding: 100px 60px;
+  max-width: 700px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9aa3ff;
+  background: #0f121a;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  header, .hero, .services, .contact, .page {
+    padding: 40px 25px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
